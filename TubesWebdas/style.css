@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0c0c10;
+  color: #e7e7e9;
+  font-size: 16px;
+  min-height: 7000px;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0c0c10;
+  border-bottom: 0.5px solid rgb(90, 90, 90);
+  width: 100%;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 94vh;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  z-index: -1;
+  filter: brightness(0.62);
+  position: absolute;
+  background-image: url(images/background.avif);
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.caption {
+  height: 94vh;
+  flex-direction: column;
+}
+
+.caption h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 80px;
+  text-decoration: underline 3px solid;
+  text-underline-offset: 0.15em;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.hero-info {
+  color: #d7b700;
+}
+
+.hero-button {
+  border-style: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  background-color: #0c0c10;
+  color: #dadada;
+  transition: 0.2 ease-out;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  transform: scale(1.01);
+}
+
+/* section1 */
+
+.img-2 {
+  width: 380px;
+  height: 700px;
+  padding-bottom: 2.3em;
+}
+
+.section1-img {
+  width: 380px;
+  height: 700px;
+  object-fit: cover;
+  filter: brightness(0.8);
+  padding-top: 2.3em;
+  padding-right: 1em;
+}
+
+.shape1 {
+  width: 100px;
+  height: 100px;
+  background-color: #e7e7e9;
+  color: #0c0c10;
+  position: absolute;
+  top: 38%;
+  left: 40%;
+}
+
+.col1-img {
+  position: relative;
+}
+
+.col2-text {
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.col2-text p {
+  line-height: 2.5em;
+  color: #d3d3d3;
+  border-right: 2px solid #e7e7e9;
+  padding-right: 2em;
+}
+
+.section1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* section end */
+
+/* section2 */
+.col2-left {
+  border-right: 2px solid #e7e7e9;
+}
+
+.col2-right {
+  border-left: 2px solid #e7e7e9;
+}
+
+.section2 .row {
+  height: 300px;
+}
+
+.section2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section2 h4 {
+  color: #edcf06;
+}
+
+.section2 p {
+  color: #d3d3d3;
+  font-style: italic;
+}
+
+.section2 .row {
+  position: relative;
+}
+
+.shape2 {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #e7e7e9;
+  border-radius: 50%;
+}
+
+.shape2-right {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #e7e7e9;
+  border-radius: 50%;
+}
+/* section2 end */
+
+/* section3 */
+.image {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  object-fit: cover;
+}
+
+.section3-container {
+  border-top: 4px solid #e7e7e9;
+  border-right: 4px solid #e7e7e9;
+  width: 400px;
+}
+
+.section3-containers {
+  width: 400px;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#section3 .row {
+  margin-bottom: 40px;
+}
+
+.shape3 {
+  width: 120px;
+  height: 120px;
+  background-color: #e7e7e9;
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #0c0c10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section3 .col-md-4 {
+  margin-bottom: 30px;
+}
+/* section3 end */
+
+/* section4 */
+.review {
+  width: 100vw;
+  position: relative;
+  height: 50vh;
+  margin-top: 100px;
+}
+
+.review::before {
+  content: "";
+  background-image: url(images/wine5.avif);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  filter: brightness(0.35);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* section4 end */
+
+/* review */
+.review h1 {
+  font-family: "Dancing Script", cursive;
+  text-transform: uppercase;
+  color: #edcf06;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+}
+
+.review {
+  flex-direction: column;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.review p {
+  line-height: 1.8em;
+}
+
+.review .container {
+  flex-direction: column;
+}
+/* review end */
+
+/* section5 */
+#column5 {
+  width: 100%;
+  height: 50%;
+  background-color: #e7e7e9;
+}
+/* section5 end */
+/* colors */
+/* #E7E7E9 Text
+#0C0C10 Background
+#9F9EC8 Primary
+#333172 Secondary
+#6563CD Accent*/
