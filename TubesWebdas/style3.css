@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8f8;
+
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e74c3c;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  color: #3498db;
+}
+
+a:hover {
+  color: #207bb3;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0c0c10;
+  border-bottom: 0.5px solid rgb(90, 90, 90);
+  width: 100%;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+}
+/* navbar end */
+
+/* section1 */
+h1 {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+i {
+  width: 20px;
+  height: 20px;
+}
+/* section1 end */
+
+/* section2 */
+.section2 {
+  margin-top: 10vh;
+  padding: 80px 0px 120px 0px;
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.section2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(images/background10.avif);
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.5);
+}
+
+h2 {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+input {
+  color: black;
+  padding: 0.8em 0.8em;
+  margin-bottom: 1em;
+}
+
+textarea {
+  padding: 0.8em 0.8em;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden2 {
+  display: none;
+}
+
+.form {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .form {
+    width: 100%;
+  }
+}
+/* section2 end */
+
+/* footer */
+i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: brightness(1.4);
+  transition: 0.15s ease-out;
+}
+
+.footer .col-md-4,
+#container2 {
+  flex-direction: column;
+}
+
+.footer p {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+}
+
+.footer h5,
+p {
+  color: #c0c0c0;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+}
+
+.icon-container {
+  width: 40%;
+}
+
+.footer .row {
+  width: 75%;
+}
+
+.footer-info {
+  width: 70%;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(26, 25, 27);
+}
+
+h2 {
+  letter-spacing: 0.2em;
+}
+
+#map:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+
+/* footer end */

@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suave</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous" />
-
-    <!-- Link CSS -->
+    <!-- link css -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="media2.css" />
 
-    <!-- Link JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    -->
-
-    <!-- Link google fonts -->
+    <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Link font awesome -->
     <link
@@ -36,7 +27,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Suave</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -52,10 +44,10 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="prices.html">Prices</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Order</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -63,207 +55,226 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- hero -->
-    <div class="hero">
-      <div class="container caption d-flex justify-content-center align-items-center">
-        <h1>Suave</h1>
-
-        <div class="md hero-info d-flex justify-content-center">
-          <p class="text-center" style="color: #edcf06">"Suave, the epitome of a traditional and elegant wine store, exudes sophistication and charm, offering a curated selection that captivates the refined palate."</p>
-        </div>
-
-        <a href=""><button type="button" class="hero-button mt-2">View More</button></a>
+    <!-- section1 -->
+    <div class="d-flex justify-content-center section1 align-items-center">
+      <div class="d-flex justify-content-center title w-50">
+        <h1 class="text-center pb-4" style="font-weight: bold">Our Wines</h1>
+        <p class="text-center" style="color: white">Savor the exceptional. Explore Our Wines - where craftsmanship meets elegance, and each bottle tells a story of passion and perfection.</p>
       </div>
     </div>
-    <!-- hero end -->
 
-    <!-- section -->
-    <div class="section1-container">
-      <div class="container section1">
-        <div class="row">
-          <div class="col-lg-3 d-flex justify-content-end g-0 pb-5" id="col1">
-            <img src="images/wine2.avif" alt="image" class="section1-img" />
+    <div class="container pt-5 box3">
+      <div class="row">
+        <div class="col-md-5"></div>
 
-            <div class="shape1 d-flex justify-content-center align-items-center">
-              <h1>01</h1>
+        <div class="col-md-7 d-flex justify-content-center" id="label">
+          <label class="text-center">selections</label>
+          <h3 class="text-center">Red Wine</h3>
+        </div>
+      </div>
+
+      <div class="row pt-4 pb-5 price">
+        <div class="col-md-5">
+          <img src="images/wine7.avif" alt="image" class="wine7" />
+        </div>
+
+        <div class="col-md-7 ps-5 pt-4">
+          <div class="red-price">
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Cabernet Sauvignon Reserve</h5>
+                <p class="info">Bold, rich blend. Blackcurrant, cherry, subtle cedar notes. Classic depth.</p>
+              </div>
+
+              <div class="col-md-3">$60</div>
             </div>
-          </div>
 
-          <div class="col-lg-3 d-flex g-0 justify-content-start pt-5">
-            <img src="images/stack-of-wine.avif" alt="image" class="section1-img" />
-          </div>
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Merlot Bliss</h5>
+                <p class="info">Velvety smooth. Ripe plum, vanilla notes. Versatile and delightful.</p>
+              </div>
 
-          <div class="col-lg-6 d-flex justify-content-center align-items-center" id="col3">
-            <div class="d-flex justify-content-center pt-5" id="col2">
-              <h1 style="color: #edcf06">Our Story</h1>
-              <p class="ps-4 fst-italic pt-3 text-dark" style="line-height: 2.4em">
-                Step into the exquisite world of Suave, where the art of indulging in fine wine is a captivating journey. Our wine haven, born out of an unwavering passion for vinous excellence, extends an invitation to an immersive
-                experience where the complexities of flavors gracefully dance on your palate, and each bottle is a testament to our commitment to the art of winemaking. From the ambient glow that bathes our space to the thoughtfully curated
-                wine selection, every facet of Suave is meticulously crafted to enhance your oenophilic adventure, ensuring that every tasting is not merely a sip but a celebration of taste and refinement."Immerse yourself in an ambiance
-                where every detail, from the warm ambient glow to the carefully curated wine selection, is tailored to transform each tasting into a cherished celebration of taste and refinement."
-              </p>
+              <div class="col-md-3">$40</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Pinot Noir Elegance</h5>
+                <p class="info">Sophisticated, nuanced. Red berries, earthy tones, touch of spice.</p>
+              </div>
+
+              <div class="col-md-3">$50</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Zinfandel Fusion</h5>
+                <p class="info">Vibrant, fruity blend. Bold blackberry, hint of pepper. Lively choice.</p>
+              </div>
+
+              <div class="col-md-3">$35</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Shiraz Harmony</h5>
+                <p class="info">Rich, robust harmony. Dark fruit, black pepper. Captivating and irresistible.</p>
+              </div>
+
+              <div class="col-md-3">$45</div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row pt-5">
+        <div class="col-md-7 d-flex justify-content-center" id="label" data-aos="flip-left" data-aos-duration="1800">
+          <label class="text-center">selections</label>
+          <h3 class="text-center">White Wine</h3>
+        </div>
+
+        <div class="col-md-5"></div>
+      </div>
+
+      <div class="row pt-4 price d-flex align-items-center">
+        <div class="col-md-7 ps-5 pt-4">
+          <div class="white-price" data-aos="flip-left" data-aos-duration="1800">
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Cabernet Sauvignon Reserve</h5>
+                <p class="info">Bold, rich blend. Blackcurrant, cherry, subtle cedar notes. Classic depth.</p>
+              </div>
+
+              <div class="col-md-3">$60</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Merlot Bliss</h5>
+                <p class="info">Velvety smooth. Ripe plum, vanilla notes. Versatile and delightful.</p>
+              </div>
+
+              <div class="col-md-3">$40</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Pinot Noir Elegance</h5>
+                <p class="info">Sophisticated, nuanced. Red berries, earthy tones, touch of spice.</p>
+              </div>
+
+              <div class="col-md-3">$50</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Zinfandel Fusion</h5>
+                <p class="info">Vibrant, fruity blend. Bold blackberry, hint of pepper. Lively choice.</p>
+              </div>
+
+              <div class="col-md-3">$35</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <h5>Shiraz Harmony</h5>
+                <p class="info">Rich, robust harmony. Dark fruit, black pepper. Captivating and irresistible.</p>
+              </div>
+
+              <div class="col-md-3">$45</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 box2 d-flex align-items-center pb-4" data-aos="flip-left" data-aos-duration="1800">
+          <img src="images/wine8.jpg" alt="image" class="wine8" />
+        </div>
+      </div>
     </div>
-    <!-- section end -->
+    <!-- section1 end -->
 
     <!-- section2 -->
-    <div class="container section2">
-      <div class="row">
-        <div class="shape2"></div>
+    <!-- Swiper -->
+    <div class="section2 d-flex justify-content-center align-items-center">
+      <h1 class="text-center swiper-title pb-5" style="color: #c0392b" data-aos="zoom-in" data-aos-duration="1200">Collections</h1>
 
-        <div class="col-md col2-left">
-          <h5 class="text-start w-100">1997</h5>
+      <div class="row w-100 box5" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="col-md box6">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card w-100">
+                  <img src="images/wine11.avif" class="card-img-top" alt="..." />
+                </div>
+              </div>
 
-          <div class="ps-5 pt-4">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <p style="font-size: 0.9rem">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus laboriosam. Numquam sit, architecto omnis quibusdam nisi accusamus voluptatibus possimus consequatur ratione, laudantium, esse repellat?
-            </p>
+              <div class="swiper-slide">
+                <div class="card w-100">
+                  <img src="images/wine12.avif" class="card-img-top" alt="..." />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card w-100">
+                  <img src="images/wine13.avif" class="card-img-top" alt="..." />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card w-100" style="width: 18rem">
+                  <img src="images/wine14.avif" class="card-img-top" alt="..." />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card w-100" style="width: 18rem">
+                  <img src="images/wine15.avif" class="card-img-top" alt="..." />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card w-100" style="width: 18rem">
+                  <img src="images/wine16.avif" class="card-img-top" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-
-        <div class="col-md empty"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md empty"></div>
-
-        <div class="col-md col2-right">
-          <h5 class="text-end w-100">2004</h5>
-
-          <div class="ps-5 pt-4 box">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <p style="font-size: 0.9rem">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus laboriosam. Numquam sit, architecto omnis quibusdam nisi accusamus voluptatibus possimus consequatur ratione, laudantium, esse repellat?
-            </p>
-          </div>
-        </div>
-
-        <div class="shape2-right"></div>
-      </div>
-
-      <div class="row">
-        <div class="shape2"></div>
-
-        <div class="col-md col2-left">
-          <h5 class="text-start w-100">2012</h5>
-
-          <div class="ps-5 pt-4">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <p style="font-size: 0.9rem">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus laboriosam. Numquam sit, architecto omnis quibusdam nisi accusamus voluptatibus possimus consequatur ratione, laudantium, esse repellat?
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md empty"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md empty"></div>
-
-        <div class="col-md col2-right">
-          <h5 class="text-end w-100">2023</h5>
-
-          <div class="pt-4 box">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-
-            <p style="font-size: 0.9rem">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus laboriosam. Numquam sit, architecto omnis quibusdam nisi accusamus voluptatibus possimus consequatur ratione, laudantium, esse repellat?
-            </p>
-          </div>
-        </div>
-
-        <div class="shape2-right"></div>
       </div>
     </div>
     <!-- section2 end -->
 
     <!-- section3 -->
-    <div class="body-section3">
-      <div class="container" id="section3">
-        <div class="shape3">
-          <h1>02</h1>
+    <div class="container section3">
+      <div class="row">
+        <div class="col-md-6 box4 pb-2" data-aos="fade-right" data-aos-duration="1800">
+          <img src="images/people.avif" alt="" class="people-img" />
         </div>
 
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-4">
-            <img src="images/wine3.avif" alt="images" class="image" />
-          </div>
-
-          <div class="col-md-4">
-            <img src="images/wine4.avif" alt="images" class="image" />
-          </div>
-
-          <div class="col-md-4 col-third">
-            <div class="section3-container pt-4 ps-4 w-100">
-              <h2 style="color: #dec103; font-weight: bold">GALLERY</h2>
-              <p class="fst-italic fs-6" style="color: rgb(12, 12, 16)">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic optio, iure a, deserunt, fuga repellendus voluptatibus molestiae blanditiis dolore eius deleniti. Nisi, laborum et!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-4">
-            <img src="images/grape.avif" alt="images" class="image" />
-          </div>
-
-          <div class="col-md-4">
-            <img src="images/park.avif" alt="images" class="image" id="image1" />
-          </div>
-
-          <div class="col-md-4">
-            <img src="images/wine.avif" alt="images" class="image" id="image2" />
-          </div>
-        </div>
-      </div>
-      <hr class="hr" />
-    </div>
-
-    <!-- section3 end -->
-
-    <!-- section4 -->
-    <div class="review d-flex justify-content-center align-items-center">
-      <div class="container d-flex align-items-center">
-        <h1 style="color: #edcf06">Testimonals</h1>
-
-        <div class="row mt-3 pt-5 pe-5 ps-5 pb-5">
-          <div class="col-md-12 d-flex align-items-center">
-            <h1 class="text-center m-0 fst-italic">"</h1>
-            <p class="text-center fs-6" id="text" style="color: #0c0c10">
-              "Your wine suave is a true masterpiece. From the first sip to the last, the elegant harmony of flavors unfolds effortlessly. Its subtle complexities and lingering finish make it the perfect companion for those special moments
-              of relaxation and celebration."
+        <div class="col-md-6 d-flex flex-column">
+          <div class="flex-fill pt-4" data-aos="fade-left" data-aos-duration="1800">
+            <h1 class="pb-4">Exquisite Craftsmanship</h1>
+            <p>
+              Suave wines stand as a beacon of uncompromising quality. Our commitment to excellence is evident in every bottle, where handpicked grapes, meticulous craftsmanship, and a dedication to perfection come together. Embrace the
+              essence of Suave, a hallmark of exceptional quality in every sip.
             </p>
+          </div>
 
-            <div class="w-100"></div>
-
-            <div class="d-flex align-items-center box2">
-              <div class="box3">
-                <img src="images/chevron-left.svg" alt="image" class="icon1" id="left" onclick="changePerson('left')" />
-              </div>
-              <img src="images/person2.avif" alt="image" class="person" id="person-img" />
-              <div class="box3">
-                <img src="images/chevron-right.svg" alt="image" class="icon2" id="right" onclick="changePerson('right')" />
-              </div>
-            </div>
+          <div class="flex-fill d-flex justify-content-start align-items-end pb-5" data-aos="fade-left" data-aos-duration="1800">
+            <p><a href="contact.html">Purchase</a></p>
           </div>
         </div>
       </div>
     </div>
-    <!-- section4 end -->
+    <!-- section3 end -->
 
     <!-- footer -->
     <div class="footer w-100">
       <div class="container d-flex justify-content-center">
-        <h2 class="pt-4" style="color: #d3d3d3">Suave</h2>
+        <h2 class="pt-4 pb-4" style="color: #ffffff; font-size: 1.6rem">Suave</h2>
       </div>
-
-      <hr />
 
       <div class="map-container">
         <iframe
@@ -314,6 +325,57 @@
       <div class="container d-flex justify-content-center"></div>
     </div>
     <!-- footer end -->
-    <script src="script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+        loopAdditionalSlides: 0,
+
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loopAdditionalSlides: 0,
+          },
+
+          300: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            loopAdditionalSlides: 0,
+          },
+
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loopAdditionalSlides: 0,
+          },
+
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loopAdditionalSlides: 1,
+          },
+        },
+      });
+    </script>
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

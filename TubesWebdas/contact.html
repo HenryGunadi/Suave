@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suave</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style3.css" />
+
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Suave</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- section1 -->
+    <div class="container section1 pt-5 mt-5">
+      <h1 class="text-center pb-4">Explore Deeper With Suave</h1>
+
+      <p class="text-center" style="color: #333333">"Indulge in extraordinary flavors. Contact us now to secure your bottle and elevate your wine collection. Your exquisite taste is just a click away!"</p>
+
+      <div class="d-flex w-100 justify-content-center">
+        <img src="images/arrow-right.svg" class="me-2" alt="" />
+        <a href="https://web.whatsapp.com/" target="_blank">Click Here</a>
+      </div>
+    </div>
+    <!-- section1 end -->
+
+    <!-- section2 -->
+    <div class="section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex flex-column align-items-center">
+            <h2 class="text-center" style="color: #ffff">Drop Us A Line</h2>
+
+            <div class="d-flex flex-column mt-3 form">
+              <input type="text" placeholder="Name" class="input" required />
+              <input type="email" placeholder="Email" class="email" required />
+              <textarea name="" id="" cols="30" rows="10" placeholder="Comment Here..." class="text" required></textarea>
+
+              <div class="thankyou hidden mt-3" style="color: #ffff">Thank you for submitting!</div>
+              <button type="button" class="btn btn-dark mt-3" onclick="submit()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section2 -->
+
+    <!-- footer -->
+    <div class="footer w-100">
+      <div class="container d-flex justify-content-center">
+        <h2 class="pt-4" style="color: #d3d3d3">Suave</h2>
+      </div>
+
+      <hr />
+
+      <div class="container d-flex align-items-center" id="container2">
+        <div class="row ps-5 pe-5 pt-5">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="images/globe (1).svg" alt="image" class="pb-2" />
+            <h5>Socials</h5>
+            <div class="d-flex justify-content-between align-items-center icon-container pb-4">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #a2a2a2"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram" style="color: #a2a2a2"></i></a>
+              <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #a2a2a2"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="images/phone-call (1).svg" alt="image" class="pb-2" />
+            <h5>Contact</h5>
+            <p class="text-center">+44 20 7123 4567</p>
+          </div>
+
+          <div class="col-md-4 d-flex align-items-center">
+            <a href=""><img src="images/map-pin (1).svg" alt="image" class="pb-2" id="map" /></a>
+            <h5>Location</h5>
+            <p class="text-center">Find Us Here</p>
+          </div>
+        </div>
+
+        <p class="footer-info pt-3 pb-3">"Suave wines: where consistent quality meets refined taste, ensuring every sip is an invitation to savor excellence, compelling you to return for more."</p>
+      </div>
+
+      <hr />
+
+      <div class="container d-flex justify-content-center">
+        <p>&copy; 2023 Suave. All Rights Reserved.</p>
+      </div>
+
+      <div class="container d-flex justify-content-center"></div>
+    </div>
+    <!-- footer -->
+
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
