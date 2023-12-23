@@ -2,6 +2,23 @@
   .box2 {
     order: -1;
   }
+
+  .red,
+  .white {
+    padding-left: 1rem !important;
+  }
+
+  .row2 {
+    padding-top: 0 !important;
+  }
+
+  .box3 {
+    padding-bottom: 4rem !important;
+  }
+
+  .section3 {
+    padding-bottom: 4rem !important;
+  }
 }
 
 @media (max-width: 767px) {

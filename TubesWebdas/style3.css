@@ -99,6 +99,8 @@ input {
 
 textarea {
   padding: 0.8em 0.8em;
+  background-color: #ffff;
+  color: #3333;
 }
 
 .hidden {
